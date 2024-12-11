@@ -37,6 +37,7 @@ function Get-Signature {
 Clear-Host
 
 Write-Host "";
+Write-Host ""; Tranqui
 Write-Host "";
 Write-Host -ForegroundColor Red " 
 ░██████╗██╗██╗░░░░░███████╗██╗░░██╗██████╗░██╗░░░██╗██████╗░
@@ -46,12 +47,12 @@ Write-Host -ForegroundColor Red "
 ██████╔╝██║███████╗███████╗██╔╝╚██╗██║░░░░░░░╚██╔╝░░██║░░░░░
 ╚═════╝░╚═╝╚══════╝╚══════╝╚═╝░░╚═╝╚═╝░░░░░░░░╚═╝░░░╚═╝░░░░░ " 
 Write-Host "";
-Write-Host -ForegroundColor Green " mwthi "; -NewLine
+Write-Host -ForegroundColor Green " https://discord.gg/silexnetwork - Porfavor promoteenme - mwthi"; -NewLine
 Write-Host "";
 
 function Test-Admin {;$currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent());$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator);}
 if (!(Test-Admin)) {
-    Write-Warning "Brother ejecutalo como ADMIN :V"
+    Write-Warning "abre cmd como admin"
     Start-Sleep 10
     Exit
 }
@@ -65,7 +66,7 @@ if (!(Get-PSDrive -Name HKLM -PSProvider Registry)){
 $bv = ("bam", "bam\State")
 Try{$Users = foreach($ii in $bv){Get-ChildItem -Path "HKLM:\SYSTEM\CurrentControlSet\Services\$($ii)\UserSettings\" | Select-Object -ExpandProperty PSChildName}}
 Catch{
-    Write-Warning "Error Parseando BAM Key. Probablemente no soporta tu version de Windows :( "
+    Write-Warning "Error Parseando BAM Key. Probablemente no soporta tu version de Windows "
     Exit
 }
 $rpath = @("HKLM:\SYSTEM\CurrentControlSet\Services\bam\","HKLM:\SYSTEM\CurrentControlSet\Services\bam\state\")
