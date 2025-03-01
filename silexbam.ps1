@@ -47,7 +47,7 @@ Write-Host -ForegroundColor Red "
 ██████╔╝██║███████╗███████╗██╔╝╚██╗██║░░░░░░░╚██╔╝░░██║░░░░░
 ╚═════╝░╚═╝╚══════╝╚══════╝╚═╝░░╚═╝╚═╝░░░░░░░░╚═╝░░░╚═╝░░░░░ " 
 Write-Host "";
-Write-Host -ForegroundColor Green " https://discord.gg/silexnetwork - Tranquilo, estas en manos de expertos - mwthi"; -NewLine
+Write-Host -ForegroundColor Green " https://discord.gg/silex - Tranquilo, estas en manos de expertos - mwthi"; -NewLine
 Write-Host "";
 
 function Test-Admin {;$currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent());$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator);}
